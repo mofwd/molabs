@@ -1,8 +1,8 @@
 blank_issues_enabled: false
 contact_links:
   - name: 💬 Questions or Discussions
-    url: https://github.com/mo-companies/molabs/discussions
+    url: https://github.com/mofwd/molabs/discussions
     about: Ask questions or start discussions about the project
   - name: 📚 Documentation
-    url: https://github.com/mo-companies/molabs/blob/main/README.md
+    url: https://github.com/mofwd/molabs/blob/main/README.md
     about: Read our documentation and guides

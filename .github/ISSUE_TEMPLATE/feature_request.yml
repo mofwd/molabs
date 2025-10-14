@@ -1,6 +1,6 @@
-name: ✨ Enhancement / Feature Request
+name: 💡 Enhancement / Feature Request
 description: Suggest a new feature or improvement (not yet scoped into a story)
-title: "✨ [Feature]: "
+title: "💡 [Feature]: "
 labels: ["enhancement", "needs-triage"]
 assignees: []
 
