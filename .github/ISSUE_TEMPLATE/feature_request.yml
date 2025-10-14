@@ -68,7 +68,7 @@ body:
   - type: textarea
     id: proposed-solution
     attributes:
-      label: Proposed Solution
+      label: Proposed Solution (Optional)
       description: How might we solve this? (Optional - we're open to alternatives)
       placeholder: Describe your idea for how this could work
     validations:
@@ -111,7 +111,7 @@ body:
   - type: textarea
     id: user-research
     attributes:
-      label: User Research / Evidence
+      label: User Research / Evidence (Optional)
       description: What evidence supports this need?
       placeholder: |
         - User feedback quotes
@@ -124,7 +124,7 @@ body:
   - type: textarea
     id: success-metrics
     attributes:
-      label: Success Metrics
+      label: Success Metrics (Optional)
       description: How will we measure success?
       placeholder: |
         - Metric 1: [e.g., 30% increase in conversion]
@@ -135,7 +135,7 @@ body:
   - type: textarea
     id: alternatives
     attributes:
-      label: Alternative Solutions
+      label: Alternative Solutions (Optional)
       description: Are there other ways to solve this problem?
       placeholder: Describe any alternative approaches considered
     validations:
@@ -144,7 +144,7 @@ body:
   - type: textarea
     id: parent-epic
     attributes:
-      label: Parent Epic
+      label: Parent Epic (Optional)
       description: Which epic does this enhancement belong to? (Enhancements can only be children of Epics)
       placeholder: "Part of Epic #10"
     validations:
@@ -153,7 +153,7 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
+      label: Additional Context (Optional)
       description: Mockups, examples, related issues
       placeholder: |
         Add any other context, screenshots, examples, or links

@@ -109,7 +109,7 @@ body:
   - type: textarea
     id: child-stories
     attributes:
-      label: Child Stories/Tasks
+      label: Child Stories/Tasks (Optional)
       description: Link to related issues that are part of this epic
       placeholder: |
         - #123 - User authentication and account creation
@@ -122,7 +122,7 @@ body:
   - type: textarea
     id: stakeholders
     attributes:
-      label: Key Stakeholders
+      label: Key Stakeholders (Optional)
       description: Who needs to be involved or consulted?
       placeholder: |
         - Product Owner: [name]
@@ -135,7 +135,7 @@ body:
   - type: textarea
     id: dependencies
     attributes:
-      label: Dependencies & Prerequisites
+      label: Dependencies & Prerequisites (Optional)
       description: What needs to happen before or during this epic?
       placeholder: |
         - Requires infrastructure setup (Epic #10)
@@ -147,7 +147,7 @@ body:
   - type: textarea
     id: risks
     attributes:
-      label: Risks & Assumptions
+      label: Risks & Assumptions (Optional)
       description: What could derail this epic? What assumptions are we making?
       placeholder: |
         Risks:
@@ -164,7 +164,7 @@ body:
   - type: textarea
     id: timeline
     attributes:
-      label: Target Timeline
+      label: Target Timeline (Optional)
       description: What's the rough timeline for completion?
       placeholder: |
         - Pilot Phase: Q1 2026 (10 customers)
@@ -176,7 +176,7 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
+      label: Additional Context (Optional)
       description: Links to docs, mockups, research, or other relevant information
       placeholder: |
         - Vision document: docs/vision.md

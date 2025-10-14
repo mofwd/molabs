@@ -32,7 +32,7 @@ body:
   - type: textarea
     id: hypothesis
     attributes:
-      label: Hypothesis to Test
+      label: Hypothesis to Test (Optional)
       description: What assumption are we testing with this story?
       placeholder: |
         We believe that providing PMs with mobile access to real-time project costs
@@ -57,7 +57,7 @@ body:
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: Acceptance Criteria
+      label: Acceptance Criteria (Optional)
       description: How will we know this is done and working?
       placeholder: |
         ```gherkin
@@ -126,7 +126,7 @@ body:
   - type: textarea
     id: parent-epic
     attributes:
-      label: Parent Epic
+      label: Parent Epic (Optional)
       description: Which epic does this story belong to? (Stories can only be children of Epics)
       placeholder: "Part of Epic #10"
     validations:
@@ -135,7 +135,7 @@ body:
   - type: textarea
     id: user-research
     attributes:
-      label: User Research / Evidence
+      label: User Research / Evidence (Optional)
       description: What evidence supports this need?
       placeholder: |
         - User feedback: "I need to be able to check costs from my phone" (5 PMs)
@@ -148,7 +148,7 @@ body:
   - type: textarea
     id: success-metrics
     attributes:
-      label: Success Metrics
+      label: Success Metrics (Optional)
       description: How will we measure success for this story?
       placeholder: |
         - Mobile usage: 90% of PMs use mobile view weekly
@@ -161,7 +161,7 @@ body:
   - type: textarea
     id: testing-approach
     attributes:
-      label: Testing Approach
+      label: Testing Approach (Optional)
       description: How should this be validated before release?
       placeholder: |
         - Unit tests for data fetching and display
@@ -175,7 +175,7 @@ body:
   - type: textarea
     id: dependencies
     attributes:
-      label: Dependencies
+      label: Dependencies (Optional)
       description: What needs to exist before this story can be completed?
       placeholder: |
         - Requires real-time cost API (Story #45)
@@ -187,7 +187,7 @@ body:
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
+      label: Additional Context (Optional)
       description: Mockups, examples, related issues
       placeholder: |
         - Mockups: [link to designs]
