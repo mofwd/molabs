@@ -1,0 +1,187 @@
+name: Epic
+description: Parent initiative containing multiple related stories or tasks
+title: "[Epic]: "
+labels: ["epic"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Epics represent large initiatives that contain multiple user stories or tasks. Use epics to organize and track progress on significant features or projects.
+
+  - type: textarea
+    id: epic-goal
+    attributes:
+      label: Epic Goal
+      description: What is the overarching goal of this epic?
+      placeholder: "Example: Enable customers to self-serve project status and invoicing information, reducing PM support burden and increasing customer satisfaction"
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-value
+    attributes:
+      label: User Value
+      description: Who benefits and how?
+      placeholder: |
+        Example:
+        - Project Managers: Reduce time spent answering status questions by 50%
+        - Customers: Gain 24/7 visibility into project status and invoices
+        - M&O Companies: Improve customer satisfaction scores and reduce support costs
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis to Test
+      description: What assumption are we testing with this epic?
+      placeholder: |
+        Example:
+        We believe that providing customers with self-service project visibility
+        will result in higher customer satisfaction and reduced PM interruptions.
+        
+        We'll know we're right when:
+        - Customer satisfaction increases by 20%
+        - PM time spent on status updates decreases by 50%
+        - 80% of customers actively use the portal
+    validations:
+      required: true
+
+  - type: textarea
+    id: scope
+    attributes:
+      label: Scope & Deliverables
+      description: What's included in this epic? What are the major deliverables?
+      placeholder: |
+        In scope:
+        - Customer portal with authentication
+        - Real-time project status dashboard
+        - Invoice viewing and download
+        - Mobile-responsive design
+        
+        Out of scope:
+        - Online payment processing (separate epic)
+        - Document collaboration (future consideration)
+    validations:
+      required: true
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will we measure success?
+      placeholder: |
+        - Customer portal adoption: 80% of customers create accounts within 3 months
+        - Customer satisfaction: Increase by 20% (measured quarterly)
+        - PM time savings: 50% reduction in time spent answering status questions
+        - Portal engagement: Average 3 logins per customer per month
+    validations:
+      required: true
+
+  - type: textarea
+    id: child-stories
+    attributes:
+      label: Child Stories/Tasks
+      description: Link to related issues that are part of this epic
+      placeholder: |
+        - #123 - User authentication and account creation
+        - #124 - Project status dashboard
+        - #125 - Invoice viewing capability
+        - #126 - Mobile responsive layout
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this epic to business goals?
+      options:
+        - Critical - Strategic business objective
+        - High - Significant business value
+        - Medium - Valuable but not urgent
+        - Low - Nice to have
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Roadmap Phase
+      description: When should this be delivered?
+      options:
+        - Phase 1 - Foundation (2025 - Q2 2026)
+        - Phase 2 - Validation (Q3 2026 - Q2 2027)
+        - Phase 3 - Scale (Q3 2027 - Q4 2028)
+        - Future - Beyond current roadmap
+    validations:
+      required: true
+
+  - type: textarea
+    id: stakeholders
+    attributes:
+      label: Key Stakeholders
+      description: Who needs to be involved or consulted?
+      placeholder: |
+        - Product Owner: [name]
+        - Technical Lead: [name]
+        - Key Users: [PMs, customers, etc.]
+        - Business Stakeholders: [leadership, etc.]
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies & Prerequisites
+      description: What needs to happen before or during this epic?
+      placeholder: |
+        - Requires infrastructure setup (Epic #10)
+        - Depends on API development (Story #45)
+        - Needs security review before production
+    validations:
+      required: false
+
+  - type: textarea
+    id: risks
+    attributes:
+      label: Risks & Assumptions
+      description: What could derail this epic? What assumptions are we making?
+      placeholder: |
+        Risks:
+        - User adoption may be lower than expected
+        - Integration with legacy systems may be complex
+        
+        Assumptions:
+        - Customers have email access for authentication
+        - PMs will actively promote portal to customers
+        - Existing data quality is sufficient for display
+    validations:
+      required: false
+
+  - type: textarea
+    id: timeline
+    attributes:
+      label: Target Timeline
+      description: What's the rough timeline for completion?
+      placeholder: |
+        - Pilot Phase: Q1 2026 (10 customers)
+        - Validation: Q2 2026 (50 customers)
+        - Full Rollout: Q3 2026 (all active customers)
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Links to docs, mockups, research, or other relevant information
+      placeholder: |
+        - Vision document: docs/vision.md
+        - Architecture overview: docs/architecture.md
+        - User research: [link]
+        - Mockups: [link]
+    validations:
+      required: false

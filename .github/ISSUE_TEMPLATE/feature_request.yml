@@ -1,0 +1,155 @@
+name: Enhancement / Feature Request
+description: Suggest a new feature or improvement (not yet scoped into a story)
+title: "✨ "
+labels: ["enhancement", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Feature requests and enhancements represent ideas that need validation and scoping. Once validated, they may become User Stories or Epics. Thank you for helping us improve!
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story (Optional)
+      description: As a [who], I want [what], so that [why/outcome]
+      placeholder: "As a customer, I want to save my cart, so that I can continue shopping later without losing my items."
+    validations:
+      required: false
+
+  - type: textarea
+    id: user-problem
+    attributes:
+      label: User Problem / Need
+      description: What problem are users facing? What need is unmet?
+      placeholder: Describe the pain point or opportunity from the user's perspective
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis to Test (Optional)
+      description: What assumption should we test if we build this?
+      placeholder: |
+        We believe that [building this feature] will result in [specific outcome].
+        
+        We'll know we're right when:
+        - [Measurable outcome 1]
+        - [Measurable outcome 2]
+        - [Measurable outcome 3]
+    validations:
+      required: false
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired Outcome
+      description: What outcome or benefit will this create for users?
+      placeholder: "Users will feel confident they won't lose their work and can shop at their own pace"
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution
+      description: How might we solve this? (Optional - we're open to alternatives)
+      placeholder: Describe your idea for how this could work
+    validations:
+      required: false
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria (Optional)
+      description: How will we know this is done and working? (Can be refined later when converted to Story)
+      placeholder: |
+        ```gherkin
+        Scenario: User successfully uses new feature
+          Given [starting condition]
+          When [user action]
+          Then [observable outcome]
+          And [additional verification]
+        
+        Scenario: Edge case handling
+          Given [edge case condition]
+          When [action]
+          Then [system response]
+        ```
+      value: |
+        ```gherkin
+        Scenario: Primary use case
+          Given 
+          When 
+          Then 
+          And 
+        
+        Scenario: Edge case
+          Given 
+          When 
+          Then 
+        ```
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this to users?
+      options:
+        - Critical - Blocking user goals
+        - High - Significant user value
+        - Medium - Nice to have
+        - Low - Minor improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-research
+    attributes:
+      label: User Research / Evidence
+      description: What evidence supports this need?
+      placeholder: |
+        - User feedback quotes
+        - Usage data
+        - Support tickets
+        - Competitive analysis
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will we measure success?
+      placeholder: |
+        - Metric 1: [e.g., 30% increase in conversion]
+        - Metric 2: [e.g., 50% reduction in cart abandonment]
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternative Solutions
+      description: Are there other ways to solve this problem?
+      placeholder: Describe any alternative approaches considered
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Mockups, examples, related issues
+      placeholder: |
+        Add any other context, screenshots, examples, or links
+        - Related to Epic #10
+        - Similar to feature in [competitor]
+        - User research: [link]
+    validations:
+      required: false

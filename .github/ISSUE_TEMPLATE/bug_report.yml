@@ -1,0 +1,143 @@
+name: Bug Report
+description: Report a bug or defect in existing functionality
+title: "🐛 "
+labels: ["bug", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to report this bug! We appreciate your help in making our product better.
+
+  - type: textarea
+    id: user-impact
+    attributes:
+      label: User Impact
+      description: Who is affected and how does this impact them?
+      placeholder: "Example: Users cannot complete checkout, causing cart abandonment and frustration."
+    validations:
+      required: true
+
+  - type: textarea
+    id: current-behavior
+    attributes:
+      label: Current Behavior
+      description: What is actually happening?
+      placeholder: Describe what's broken or not working as expected
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected Behavior
+      description: What should happen instead?
+      placeholder: Describe the correct behavior
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps-to-reproduce
+    attributes:
+      label: Steps to Reproduce
+      description: How can we recreate this issue?
+      placeholder: |
+        1. Go to '...'
+        2. Click on '...'
+        3. Scroll down to '...'
+        4. See error
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this is fixed?
+      placeholder: |
+        ```gherkin
+        Scenario: User completes action successfully
+          Given [initial state]
+          When [action taken]
+          Then [expected outcome]
+          And [additional verification]
+        ```
+      value: |
+        ```gherkin
+        Scenario: Bug is resolved
+          Given 
+          When 
+          Then 
+        ```
+    validations:
+      required: true
+
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - System down or data loss
+        - High - Major feature broken
+        - Medium - Feature partially broken
+        - Low - Minor issue or cosmetic
+    validations:
+      required: true
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Where did this occur?
+      placeholder: |
+        - Browser: [e.g., Chrome 120]
+        - OS: [e.g., macOS 14]
+        - Version: [e.g., v2.1.0]
+        - URL: [if applicable]
+    validations:
+      required: false
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: Screenshots / Logs
+      description: Add screenshots, error messages, or logs
+      placeholder: Drag and drop images or paste error logs here
+    validations:
+      required: false
+
+  - type: textarea
+    id: regression-test
+    attributes:
+      label: Regression Test Strategy
+      description: How can we prevent this bug from happening again?
+      placeholder: |
+        Example:
+        - Add integration test for checkout flow
+        - Add validation test for payment processing
+        - Add monitoring alert for transaction failures
+    validations:
+      required: false
+
+  - type: textarea
+    id: related-issues
+    attributes:
+      label: Related Issues
+      description: Links to related issues or epics
+      placeholder: |
+        - Part of Epic #10
+        - Related to #45, #67
+        - Duplicate of #123
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Any other relevant information
+      placeholder: Related issues, workarounds, frequency, etc.
+    validations:
+      required: false

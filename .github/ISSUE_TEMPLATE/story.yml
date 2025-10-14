@@ -1,0 +1,197 @@
+name: User Story
+description: User-facing functionality or capability
+title: "[Story]: "
+labels: ["story", "needs-triage"]
+assignees: []
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        User stories represent user-facing functionality. They should be small enough to complete in one iteration and focus on user outcomes, not technical implementation.
+
+  - type: textarea
+    id: user-story
+    attributes:
+      label: User Story
+      description: As a [who], I want [what], so that [why/outcome]
+      placeholder: "As a project manager, I want to view real-time project costs on my mobile device, so that I can answer customer questions immediately without returning to my desk."
+    validations:
+      required: true
+
+  - type: textarea
+    id: user-problem
+    attributes:
+      label: User Problem / Need
+      description: What problem are users facing? What need is unmet?
+      placeholder: |
+        Example: Project managers are often in the field or in meetings with customers. When asked about project costs, they must return to their desk to access information, creating delays and appearing unprepared. This damages customer confidence and wastes PM time.
+    validations:
+      required: true
+
+  - type: textarea
+    id: hypothesis
+    attributes:
+      label: Hypothesis to Test
+      description: What assumption are we testing with this story?
+      placeholder: |
+        We believe that providing PMs with mobile access to real-time project costs
+        will result in faster customer responses and increased PM confidence.
+        
+        We'll know we're right when:
+        - PMs respond to cost questions 80% faster
+        - PM satisfaction with tools increases by 20%
+        - 90% of PMs use mobile view at least weekly
+    validations:
+      required: true
+
+  - type: textarea
+    id: desired-outcome
+    attributes:
+      label: Desired Outcome
+      description: What outcome or benefit will this create for users?
+      placeholder: "PMs will confidently answer customer cost questions immediately, appearing knowledgeable and in control, while saving 30+ minutes per day previously spent retrieving information."
+    validations:
+      required: true
+
+  - type: textarea
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: How will we know this is done and working?
+      placeholder: |
+        ```gherkin
+        Scenario: PM views project costs on mobile device
+          Given I am a project manager with active projects
+          When I access the PM dashboard on my mobile device
+          Then I see a list of my active projects
+          And I can tap a project to view current costs
+          And costs are updated within 5 minutes of actual changes
+        
+        Scenario: Cost data is accurate
+          Given a project has recent cost updates
+          When I view the project on mobile
+          Then the displayed costs match desktop dashboard
+          And the last update timestamp is shown
+        
+        Scenario: Works offline with cached data
+          Given I previously viewed project costs
+          When I lose internet connectivity
+          Then I can still view cached cost data
+          And a "last updated" warning is displayed
+        ```
+      value: |
+        ```gherkin
+        Scenario: Primary use case
+          Given 
+          When 
+          Then 
+          And 
+        
+        Scenario: Edge case
+          Given 
+          When 
+          Then 
+        ```
+    validations:
+      required: true
+
+  - type: textarea
+    id: proposed-solution
+    attributes:
+      label: Proposed Solution (Optional)
+      description: How might we solve this? (Optional - we're open to alternatives)
+      placeholder: |
+        Example approach:
+        - Responsive web design (no native app required)
+        - Progressive Web App for offline capability
+        - Dashboard optimized for mobile viewport
+        - Touch-friendly interface
+    validations:
+      required: false
+
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this to users?
+      options:
+        - Critical - Blocking user goals
+        - High - Significant user value
+        - Medium - Nice to have
+        - Low - Minor improvement
+    validations:
+      required: true
+
+  - type: textarea
+    id: parent-epic
+    attributes:
+      label: Parent Epic
+      description: Which epic does this story belong to?
+      placeholder: "Part of Epic #10 - PM Real-time Dashboard"
+    validations:
+      required: false
+
+  - type: textarea
+    id: user-research
+    attributes:
+      label: User Research / Evidence
+      description: What evidence supports this need?
+      placeholder: |
+        - User feedback: "I need to be able to check costs from my phone" (5 PMs)
+        - Time study: PMs spend avg 30 min/day retrieving cost info
+        - Observation: PMs frequently leave customer meetings to check costs
+        - Competitive: Competitor X offers mobile dashboard
+    validations:
+      required: false
+
+  - type: textarea
+    id: success-metrics
+    attributes:
+      label: Success Metrics
+      description: How will we measure success for this story?
+      placeholder: |
+        - Mobile usage: 90% of PMs use mobile view weekly
+        - Response time: 80% faster responses to cost questions
+        - PM satisfaction: "Mobile dashboard" rating > 4.5/5
+        - Adoption: 100% of pilot PMs actively use within 2 weeks
+    validations:
+      required: false
+
+  - type: textarea
+    id: testing-approach
+    attributes:
+      label: Testing Approach
+      description: How should this be validated before release?
+      placeholder: |
+        - Unit tests for data fetching and display
+        - Integration tests for API connectivity
+        - Manual testing on iOS and Android devices
+        - User acceptance testing with 3-5 PMs
+        - Performance testing (< 2 second load time)
+    validations:
+      required: false
+
+  - type: textarea
+    id: dependencies
+    attributes:
+      label: Dependencies
+      description: What needs to exist before this story can be completed?
+      placeholder: |
+        - Requires real-time cost API (Story #45)
+        - Needs authentication system (Story #40)
+        - Depends on database with current cost data
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: Additional Context
+      description: Mockups, examples, related issues
+      placeholder: |
+        - Mockups: [link to designs]
+        - Related stories: #123, #124
+        - User research doc: [link]
+    validations:
+      required: false
