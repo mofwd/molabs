@@ -1,6 +1,6 @@
-name: 🐛 Bug Report
+name: 🪲 Bug Report
 description: Report a bug or defect in existing functionality
-title: "🐛 [Bug]: "
+title: "🪲 [Bug]: "
 labels: ["bug", "needs-triage"]
 assignees: []
 
