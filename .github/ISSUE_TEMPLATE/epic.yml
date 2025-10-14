@@ -32,6 +32,32 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this epic to business goals?
+      options:
+        - Critical - Strategic business objective
+        - High - Significant business value
+        - Medium - Valuable but not urgent
+        - Low - Nice to have
+    validations:
+      required: true
+
+  - type: dropdown
+    id: phase
+    attributes:
+      label: Roadmap Phase
+      description: When should this be delivered?
+      options:
+        - Phase 1 - Foundation (2025 - Q2 2026)
+        - Phase 2 - Validation (Q3 2026 - Q2 2027)
+        - Phase 3 - Scale (Q3 2027 - Q4 2028)
+        - Future - Beyond current roadmap
+    validations:
+      required: true
+
   - type: textarea
     id: hypothesis
     attributes:
@@ -92,32 +118,6 @@ body:
         - #126 - Mobile responsive layout
     validations:
       required: false
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this epic to business goals?
-      options:
-        - Critical - Strategic business objective
-        - High - Significant business value
-        - Medium - Valuable but not urgent
-        - Low - Nice to have
-    validations:
-      required: true
-
-  - type: dropdown
-    id: phase
-    attributes:
-      label: Roadmap Phase
-      description: When should this be delivered?
-      options:
-        - Phase 1 - Foundation (2025 - Q2 2026)
-        - Phase 2 - Validation (Q3 2026 - Q2 2027)
-        - Phase 3 - Scale (Q3 2027 - Q4 2028)
-        - Future - Beyond current roadmap
-    validations:
-      required: true
 
   - type: textarea
     id: stakeholders

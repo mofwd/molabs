@@ -48,6 +48,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How urgent is this work?
+      options:
+        - Critical - Blocking or urgent
+        - High - Important, should do soon
+        - Medium - Moderate importance
+        - Low - Nice to have
+    validations:
+      required: true
+
   - type: textarea
     id: approach
     attributes:
@@ -73,19 +86,6 @@ body:
         - [ ] Work is verified/tested
     validations:
       required: false
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How urgent is this work?
-      options:
-        - Critical - Blocking or urgent
-        - High - Important, should do soon
-        - Medium - Moderate importance
-        - Low - Nice to have
-    validations:
-      required: true
 
   - type: textarea
     id: impact

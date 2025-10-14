@@ -28,6 +28,19 @@ body:
     validations:
       required: true
 
+  - type: dropdown
+    id: priority
+    attributes:
+      label: Priority
+      description: How important is this to users?
+      options:
+        - Critical - Blocking user goals
+        - High - Significant user value
+        - Medium - Nice to have
+        - Low - Minor improvement
+    validations:
+      required: true
+
   - type: textarea
     id: hypothesis
     attributes:
@@ -94,19 +107,6 @@ body:
         ```
     validations:
       required: false
-
-  - type: dropdown
-    id: priority
-    attributes:
-      label: Priority
-      description: How important is this to users?
-      options:
-        - Critical - Blocking user goals
-        - High - Significant user value
-        - Medium - Nice to have
-        - Low - Minor improvement
-    validations:
-      required: true
 
   - type: textarea
     id: user-research

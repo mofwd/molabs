@@ -10,6 +10,19 @@ body:
       value: |
         Thanks for taking the time to report this bug! We appreciate your help in making our product better.
 
+  - type: dropdown
+    id: severity
+    attributes:
+      label: Severity
+      description: How severe is this bug?
+      options:
+        - Critical - System down or data loss
+        - High - Major feature broken
+        - Medium - Feature partially broken
+        - Low - Minor issue or cosmetic
+    validations:
+      required: true
+
   - type: textarea
     id: user-impact
     attributes:
@@ -72,19 +85,6 @@ body:
         ```
     validations:
       required: false
-
-  - type: dropdown
-    id: severity
-    attributes:
-      label: Severity
-      description: How severe is this bug?
-      options:
-        - Critical - System down or data loss
-        - High - Major feature broken
-        - Medium - Feature partially broken
-        - Low - Minor issue or cosmetic
-    validations:
-      required: true
 
   - type: textarea
     id: environment
