@@ -114,11 +114,14 @@ body:
       required: false
 
   - type: textarea
-    id: parent-epic
+    id: parent-task
     attributes:
-      label: Parent Epic
-      description: Which epic does this task belong to? (if applicable)
-      placeholder: "Part of Epic #15"
+      label: Parent Task/Epic
+      description: Is this a sub-task of another issue? Link to the parent task or epic.
+      placeholder: |
+        Part of #123
+        
+        Or for Epic: Part of Epic #15
     validations:
       required: false
 

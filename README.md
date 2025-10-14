@@ -151,10 +151,43 @@ We host open demos every quarter to:
 
 ## Where to Learn More
 
+### 📚 Documentation
+
 - **Vision & Strategy**: See [`docs/vision.md`](docs/vision.md) for our 3-year roadmap and success metrics
 - **Technical Architecture**: See [`docs/architecture.md`](docs/architecture.md) for infrastructure details (technical audience)
 - **Future Ideas**: See [`docs/ideas.md`](docs/ideas.md) for concepts we're exploring
 - **Current Progress**: See [`docs/progress/`](docs/progress/) for daily development logs (technical audience)
+- **Issue Template Guide**: See [`.github/ISSUE_TEMPLATE_GUIDE.md`](.github/ISSUE_TEMPLATE_GUIDE.md) for how to create issues
+- **AI Coding Instructions**: See [`.github/copilot-instructions.md`](.github/copilot-instructions.md) for development standards (technical audience)
+
+### 🎯 Contributing & Issue Tracking
+
+This repository uses GitHub Issues as our product backlog. We have templates for different types of work:
+
+**Issue Types:**
+- **Epic** - Large initiatives containing multiple stories or tasks
+- **Story** - User-facing functionality to deliver
+- **Bug** - Something broken that needs fixing
+- **Enhancement** - Ideas that need validation and scoping
+- **Task** - Technical work, documentation, infrastructure, etc.
+
+**Issue Hierarchy:**
+```
+Epic
+├── Story (user-facing work)
+├── Bug (defects)
+├── Enhancement (feature requests)
+└── Task (technical work)
+    └── Task (sub-tasks)
+```
+
+**To create an issue:**
+1. Go to the [Issues tab](../../issues)
+2. Click "New Issue"
+3. Choose the appropriate template
+4. Fill in the details
+
+See our [Issue Template Guide](.github/ISSUE_TEMPLATE_GUIDE.md) for detailed guidance on when to use each template.
 
 ---
 

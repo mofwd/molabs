@@ -127,8 +127,8 @@ body:
     id: parent-epic
     attributes:
       label: Parent Epic
-      description: Which epic does this story belong to?
-      placeholder: "Part of Epic #10 - PM Real-time Dashboard"
+      description: Which epic does this story belong to? (Stories can only be children of Epics)
+      placeholder: "Part of Epic #10"
     validations:
       required: false
 

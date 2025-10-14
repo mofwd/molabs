@@ -122,14 +122,23 @@ body:
       required: false
 
   - type: textarea
+    id: parent-epic
+    attributes:
+      label: Parent Epic
+      description: Which epic does this bug belong to? (Bugs can only be children of Epics)
+      placeholder: "Part of Epic #10"
+    validations:
+      required: false
+
+  - type: textarea
     id: related-issues
     attributes:
       label: Related Issues
-      description: Links to related issues or epics
+      description: Links to other related issues (not parent/child relationships)
       placeholder: |
-        - Part of Epic #10
         - Related to #45, #67
         - Duplicate of #123
+        - Caused by #89
     validations:
       required: false
 

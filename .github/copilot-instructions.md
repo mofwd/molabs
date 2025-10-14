@@ -29,13 +29,43 @@
 
 This GitHub repository's issues serve as our **product backlog**, with different issue types mapping directly to traditional backlog item types:
 
-- `epic` label → Epic (parent of multiple stories)
+- `epic` label → Epic (parent of multiple stories/tasks)
 - `story` label → Story (user-facing functionality)
-- `chore` label → Task (technical work, infrastructure)
+- `task` label → Task (technical work, infrastructure, documentation, etc.)
 - `bug` label → Bug (something broken)
-- `enhancement` label → Feature Request (new functionality)
+- `enhancement` label → Feature Request (new functionality, not yet scoped)
 
 All Stories, Feature Requests, and Bugs receive a `needs-triage` label by default, removed after prioritization.
+
+#### Issue Hierarchy
+
+We enforce a clear parent-child hierarchy for organizing work:
+
+```
+Epic (#10)
+├── Story (#11) ────────────> Can ONLY be child of Epic
+├── Bug (#12) ──────────────> Can ONLY be child of Epic
+├── Enhancement (#13) ──────> Can ONLY be child of Epic
+└── Task (parent) (#14) ────> Can be child of Epic
+    ├── Task (child) (#15) ─> Can be child of another Task
+    └── Task (child) (#16) ─> Can be child of another Task
+```
+
+**Rules:**
+- **Epics** are top-level containers (no parent)
+- **Stories, Bugs, Enhancements** can only be children of Epics
+- **Tasks** are flexible: can be children of Epics OR other Tasks (for sub-task breakdown)
+- Use GitHub's task list syntax in Epic descriptions to track child issue completion
+
+**Example Epic with children:**
+```markdown
+## Sub-tasks
+- [ ] #11 - Story: PM mobile dashboard
+- [ ] #12 - Bug: Login fails on mobile
+- [ ] #14 - Task: Set up ProxMox automation
+  - [ ] #15 - Sub-task: Configure Terraform
+  - [ ] #16 - Sub-task: Create Ansible playbooks
+```
 
 ### Current Status
 
