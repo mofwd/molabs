@@ -1,6 +1,6 @@
 name: Epic
 description: Parent initiative containing multiple related stories or tasks
-title: "[Epic]: "
+title: "🎯 [Epic]: "
 labels: ["epic"]
 assignees: []
 

@@ -1,6 +1,6 @@
 name: Bug Report
 description: Report a bug or defect in existing functionality
-title: "🐛 "
+title: "🐛 [Bug]: "
 labels: ["bug", "needs-triage"]
 assignees: []
 
@@ -71,7 +71,7 @@ body:
           Then 
         ```
     validations:
-      required: true
+      required: false
 
   - type: dropdown
     id: severity

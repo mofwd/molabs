@@ -1,6 +1,6 @@
 name: User Story
 description: User-facing functionality or capability
-title: "[Story]: "
+title: "📖 [Story]: "
 labels: ["story", "needs-triage"]
 assignees: []
 
@@ -43,7 +43,7 @@ body:
         - PM satisfaction with tools increases by 20%
         - 90% of PMs use mobile view at least weekly
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: desired-outcome
@@ -94,7 +94,7 @@ body:
           Then 
         ```
     validations:
-      required: true
+      required: false
 
   - type: textarea
     id: proposed-solution
