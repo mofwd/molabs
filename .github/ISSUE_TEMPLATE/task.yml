@@ -1,6 +1,6 @@
-name: 🔧 Task
+name: 🧩 Task
 description: Any task, chore, or work item that needs to be done
-title: "🔧 [Task]: "
+title: "🧩 [Task]: "
 labels: ["task"]
 assignees: []
 
